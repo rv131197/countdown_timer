@@ -6,7 +6,8 @@
 
 .App {
   text-align: center;
-  background-color:  #61dafb;
+  background-color:  #070a0a;
+  transition: 1ms;
   height: 100vh;
   display: flex;
   flex-direction: column;
@@ -42,4 +43,40 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.clock {
+  position: relative;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(270deg,#042220, #12a7d4);
+  height: 180px;
+  width: 400px;
+  color: rgb(110, 255, 255);
+  /* 7px for glow  */
+  text-shadow: 1px 1px 7px; 
+  border-radius: 15px;
+  border: 5px solid silver;
+  /* for the box outer glow  */
+  box-shadow: 0 0 5px 25px;
+}
+
+.clock section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* to spread equally  */
+  padding: 1rem;
+}
+
+.clock section p {
+  font-size: 4rem;
+}
+
+.clock section small {
+  color: silver;
+  text-shadow: none;
 }
